@@ -3,24 +3,29 @@
 <main>
   <article>
     <header>
-      <img src="/images/img.jpg" alt="foto van mij :)" width="200px">
+      <img src="/assets/img.jpg" alt="foto van mij :)" width="200px">
       <h1><%= data.name %></h1>
       <p><%= data.prefix %> <%= data.surname %></p> 
     </header>
 
+    <div class="button-div">
+      <button class="content-btn"><i class='bx bx-chevrons-up arrow'></i></button>
+    </div>
 
-    <section class="bio tabcontent">
-      <p><%= data.bio %></p>
-    </section>
-
-    <section class="contact tabcontent">
-      <ul>
-        <li><%= data.github_handle %></li>
-        <li><%= data.website %></li>
-        <li><%= data.email %></li>
-        <li><%= data.linkedin %></li>
-      </ul>
-    </section>
+    <div class="content">
+      <section class="bio tabcontent">
+        <p><%= data.bio %></p>
+      </section>
+  
+      <section class="contact tabcontent">
+        <ul>
+          <li><%= data.github_handle %></li>
+          <li><%= data.website %></li>
+          <li><%= data.email %></li>
+          <li><%= data.linkedin %></li>
+        </ul>
+      </section>
+    </div>
   
   
   </article>
