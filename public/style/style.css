@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171717;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "bio bio";
+  width: 90vw;
+  max-width: 35rem;
+  flex-direction: column;
+  background: linear-gradient(60deg, #d60837 0%, #ffaa00 100%);
+  box-shadow: 0 0 20px #171717;
+  border-radius: 5%;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+article {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 1rem;
+  justify-content: space-evenly;
+  transform: rotate(-1deg);
+  box-shadow: 0 0 15px #1c1c1c;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "name name"
+    "surname surname";
+
+  img {
+    grid-area: img;
+    place-self: center;
+    min-width: 100px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    grid-area: name;
+    place-self: center;
+    font-size: 3rem;
+    margin: -2rem 0 0 0;
+  }
+
+  p {
+    font-weight: 300;
+    grid-area: surname;
+    margin: 0;
+    place-self: center;
+  }
+}
+
+.tabcontent {
+    
+    li {
+        list-style-type:square;
+    }
+}

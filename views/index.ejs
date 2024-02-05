@@ -1,14 +1,29 @@
 <%- include('./partials/head') %>
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+<main>
+  <article>
+    <header>
+      <img src="/images/img.jpg" alt="foto van mij :)" width="200px">
+      <h1><%= data.name %></h1>
+      <p><%= data.prefix %> <%= data.surname %></p> 
+    </header>
 
-  <p><%= data.name %></p>
 
-  <footer></footer>
-</article>
+    <section class="bio tabcontent">
+      <p><%= data.bio %></p>
+    </section>
+
+    <section class="contact tabcontent">
+      <ul>
+        <li><%= data.github_handle %></li>
+        <li><%= data.website %></li>
+        <li><%= data.email %></li>
+        <li><%= data.linkedin %></li>
+      </ul>
+    </section>
+  
+  
+  </article>
+</main>
 
 <%- include('./partials/foot') %>
