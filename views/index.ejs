@@ -1,29 +1,29 @@
 <%- include('./partials/head') %>
 
   <main>
+    <div class="container">
+      <div class="card-container">
+        <div class="left-page">
+          <div class="page page-1">
+            <h1><%- data.name %></h1>
+            <p><%- data.prefix %> <%- data.surname %></p>
+            <img src="/assets/img2.png" alt="photo of me, Lisa" width="150px">
+          </div>
 
-    <article>
-      <header>
-        <img src="/assets/img2.png" alt="foto van mij :)" width="200px">
-        <h1><%= data.name %></h1>
-        <p><%= data.prefix %> <%= data.surname %></p> 
-      </header>
-  
-      <div class="content">
-        <section class="bio tabcontent">
-          <p><%= data.custom.leeftijd %></p>
-          <p><%= data.custom.werk %></p>
-          <p><%= data.custom.plaats %></p>
+          <div class="page page-2">
+            <h2>PAGE 2</h2>
+          </div>
+        </div>
+
+        <section class="right-page">
+          <div class="page page-3">
+            <h1>PAGE 3</h1>
+            <h2>SKILLS</h2>
+            <p>i can do this B)</p>
+            <button>more?</button>
+          </div>
         </section>
-    
-        <section class="contact tabcontent">
-          <ul>
-            <li><%= data.github_handle %></li>
-            <li><%= data.website %></li>
-            <li><%= data.custom.linkedin %></li>            
-            <li><%= data.email %></li>
-          </ul>
-        </section>
+
       </div>
     </div>
 
