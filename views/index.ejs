@@ -1,34 +1,32 @@
 <%- include('./partials/head') %>
 
-<main>
-  <article>
-    <header>
-      <img src="/assets/img.jpg" alt="foto van mij :)" width="200px">
-      <h1><%= data.name %></h1>
-      <p><%= data.prefix %> <%= data.surname %></p> 
-    </header>
+  <main>
 
-    <div class="button-div">
-      <button class="content-btn"><i class='bx bx-chevrons-up arrow'></i></button>
+    <article>
+      <header>
+        <img src="/assets/img2.png" alt="foto van mij :)" width="200px">
+        <h1><%= data.name %></h1>
+        <p><%= data.prefix %> <%= data.surname %></p> 
+      </header>
+  
+      <div class="content">
+        <section class="bio tabcontent">
+          <p><%= data.custom.leeftijd %></p>
+          <p><%= data.custom.werk %></p>
+          <p><%= data.custom.plaats %></p>
+        </section>
+    
+        <section class="contact tabcontent">
+          <ul>
+            <li><%= data.github_handle %></li>
+            <li><%= data.website %></li>
+            <li><%= data.custom.linkedin %></li>            
+            <li><%= data.email %></li>
+          </ul>
+        </section>
+      </div>
     </div>
 
-    <div class="content">
-      <section class="bio tabcontent">
-        <p><%= data.bio %></p>
-      </section>
-  
-      <section class="contact tabcontent">
-        <ul>
-          <li><%= data.github_handle %></li>
-          <li><%= data.website %></li>
-          <li><%= data.email %></li>
-          <li><%= data.linkedin %></li>
-        </ul>
-      </section>
-    </div>
-  
-  
-  </article>
-</main>
+  </main>
 
-<%- include('./partials/foot') %>
+  <%- include('./partials/foot') %>

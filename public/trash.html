@@ -1,34 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+<article>
+    <header>
+      <img src="/assets/img.jpg" alt="foto van mij :)" width="200px">
+      <h1><%= data.name %></h1>
+      <p><%= data.prefix %> <%= data.surname %></p> 
+    </header>
 
-@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+    <!-- <div class="button-div">
+      <button class="content-btn"><i class='bx bx-chevrons-up arrow'></i></button>
+    </div> -->
 
-/*  */
+    <div class="content">
+      <section class="bio tabcontent">
+      </section>
+  
+      <section class="contact tabcontent">
+        <ul>
+          <li><%= data.github_handle %></li>
+          <li><%= data.website %></li>
+          <li><%= data.email %></li>
+          <li><%= data.linkedin %></li>
+        </ul>
+      </section>
+    </div>
+  
+  
+  </article>
 
-html {
-  --white: #fbfbfb;
-  --black: #1a191b;
-  --creme: #f6f2f2;
-  --grey: #191919;
-  --secondary: #7d3132;
-  --highlight: #b23133;
-  --dark: #490909;
-
-  --font-regular: "Inter", Arial, helvetica, sans-serif;
-  --font-one: "Borel", Arial, helvetica, sans-serif;
-  --font-two: "Single Day", cursive, "inter", Arial, helvetica, sans-serif;
-
-  --spac-one: 0.8rem;
-  --spac-two: 0.4rem;
-  --spac-three: 0.2rem;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<style>
 
 body {
   height: 100vh;
@@ -43,7 +42,6 @@ body {
 }
 
 main {
-  background-color: var(--creme);
   display: grid;
   grid-template-areas:
     "header"
@@ -53,7 +51,7 @@ main {
   max-width: 35rem;
   overflow: hidden;
   flex-direction: column;
-  /* background: linear-gradient(45deg, var(--second-one) 50%, var(--second-two) 100%); */
+  background: linear-gradient(45deg, var(--second-one) 50%, var(--second-two) 100%);
   box-shadow: 0 0 20px var(--black);
   border-radius: 5%;
   padding: 1rem;
@@ -63,10 +61,10 @@ article {
   background-color: var(--white);
   width: 100%;
   overflow: hidden;
-  padding: var(--spac-three);
   border-radius: 1rem;
   justify-content: space-evenly;
-  /* box-shadow: 0 0 5px var(--dark); */
+  transform: rotate(-1deg);
+  box-shadow: 0 0 15px #1c1c1c;
 }
 
 header {
@@ -171,7 +169,7 @@ button {
   }
 
   main {
-    background: linear-gradient(20deg, var(--dark) 0%, var(--grey) 100%);
+    background: linear-gradient(60deg, var(--dark-one) 0%, var(--dark-two) 100%);
   }
 
   article {
@@ -187,3 +185,5 @@ button {
     color: var(--dark-one);
   }
 }
+
+</style>
