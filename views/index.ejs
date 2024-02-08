@@ -4,34 +4,49 @@
     <div class="container">
       <div class="card-container">
 
-       <div class="card">
-          <div class="left-page">
-            <div class="flip-card">
+        <div class="shadow-box">
+          <div class="card">
+            <div class="left-page">
               <div class="page page-1">
                 <h1><%- data.name %></h1>
                 <p><%- data.prefix %> <%- data.surname %></p>
-                <img src="/assets/img2.png" alt="photo of me, Lisa" width="130px">
               </div>
-  
+
               <div class="page page-2">
                 <h2>ABOUT ME</h2>
-                <p><%- data.bio %></p>
-                <p><%- data.custom.leeftijd %></p>
-                <p><%- data.custom.werk %></p>
-                <p><%- data.custom.plaats %></p>
+                <ul>
+                  <li><%- data.bio %></li>
+                  <li><%- data.custom.leeftijd %></li>
+                  <li><%- data.custom.plaats %></li>
+                  <li><%- data.custom.werk %></li>
+                  <li><%- data.email %></li>
+                </ul>
+
+                <img src="/assets/img2.png" alt="photo of me, Lisa" width="135px">
+
+                <div class="buttons">
+                  <a href="https://github.com/lisagjh"><i class='bx bxl-github' ></i></a>
+                  <a href="www.linkedin.com/in/lisagjh"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
               </div>
             </div>
-  
+
             <div class="page page-3">
               <h2>SKILLS</h2>
               <p><%- data.bio %></p>
+
+              <!-- <button class="flip-btn">flip me <3 </button> -->
             </div>
-       </div>
 
-
-
+          </div>
         </div>
+
+        <!-- <div class="page page-4">
+          <h3>find me <span>here</span>:</h3>
+        </div> -->
+
       </div>
+    </div>
 
   </main>
 
