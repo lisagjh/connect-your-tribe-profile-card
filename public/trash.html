@@ -1,0 +1,93 @@
+<div class="page page-2">
+    <h2>PAGE 2</h2>
+</div>
+</div>
+
+<section class="right-page">
+    <div class="page page-3">
+        <h1>PAGE 3</h1>
+        <h2>SKILLS</h2>
+        <p>i can do this B)</p>
+        <button>more?</button>
+    </div>
+</section>
+
+<style>
+    
+    body {
+        height: 100vh;
+        width: 100vw;
+        font-family: var(--font-regular);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--black);
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        perspective: 1500px;
+    }
+
+    .card-container {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        transition: all 0.8s ease-in-out;
+        transform-style: preserve-3d;
+    }
+
+    .page {
+        width: 16rem;
+        height: 14rem;
+        padding: var(--spac-one);
+        border: 1px solid var(--black);
+    }
+
+    .page-1 {
+        background-color: var(--creme);
+        transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+        transform-origin: top;
+    }
+
+    .page-2 {
+        background-color: var(--creme);
+        transform: rotateX(180deg);
+        transition: transform 1s ease-in-out;
+        transform-origin: bottom;
+    }
+
+    .page-3 {
+        background-color: var(--creme);
+        translate: 0 -28rem;
+        transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+        transform-origin: top;
+        box-shadow: 0px 5px 20px 1px var(--black);
+    }
+
+    .card-container:hover {
+        translate: 0 10rem;
+    }
+
+    .card-container:hover .page-1 {
+        transform: rotateX(180deg);
+        box-shadow: 0px 5px 20px 1px var(--black);
+
+    }
+
+    .card-container:hover .page-2 {
+        transform: rotateX(0deg);
+    }
+
+    .card-container:hover .page-3 {
+        box-shadow: 0px 5px 20px 1px var(--black);
+    }
+</style>

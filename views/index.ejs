@@ -3,29 +3,35 @@
   <main>
     <div class="container">
       <div class="card-container">
-        <div class="left-page">
-          <div class="page page-1">
-            <h1><%- data.name %></h1>
-            <p><%- data.prefix %> <%- data.surname %></p>
-            <img src="/assets/img2.png" alt="photo of me, Lisa" width="150px">
-          </div>
 
-          <div class="page page-2">
-            <h2>PAGE 2</h2>
-          </div>
+       <div class="card">
+          <div class="left-page">
+            <div class="flip-card">
+              <div class="page page-1">
+                <h1><%- data.name %></h1>
+                <p><%- data.prefix %> <%- data.surname %></p>
+                <img src="/assets/img2.png" alt="photo of me, Lisa" width="130px">
+              </div>
+  
+              <div class="page page-2">
+                <h2>ABOUT ME</h2>
+                <p><%- data.bio %></p>
+                <p><%- data.custom.leeftijd %></p>
+                <p><%- data.custom.werk %></p>
+                <p><%- data.custom.plaats %></p>
+              </div>
+            </div>
+  
+            <div class="page page-3">
+              <h2>SKILLS</h2>
+              <p><%- data.bio %></p>
+            </div>
+       </div>
+
+
+
         </div>
-
-        <section class="right-page">
-          <div class="page page-3">
-            <h1>PAGE 3</h1>
-            <h2>SKILLS</h2>
-            <p>i can do this B)</p>
-            <button>more?</button>
-          </div>
-        </section>
-
       </div>
-    </div>
 
   </main>
 
