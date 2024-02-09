@@ -83,7 +83,7 @@ main {
 
 .shadow-box {
   position: relative;
-  background: transparent;
+  background: var(--black);
   width: 19rem;
   height: 18rem;
   box-shadow: 1px 5px 30px 10px var(--black);
